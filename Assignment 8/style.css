@@ -1,0 +1,30 @@
+h1{
+    margin: 0px;
+    padding-left: 60px;
+    padding-top: 30px;
+    font-size: 45px;
+    font-family: "Calibri";
+}
+
+#dropdown{
+    padding-left: 150;
+    font-size: 20px;
+    font-family: "Calibri";
+}
+
+#input{
+    padding-left: 60;
+    font-size: 20px;
+    font-family: "Calibri";
+}
+
+#in{
+    padding-left:20px;
+
+}
+
+#output{
+    padding-left: 60;
+    font-size: 20px;
+    font-family: "Calibri";
+}

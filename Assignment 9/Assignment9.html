@@ -1,0 +1,76 @@
+<!--
+    1. FETCH 'https://radufromfinland.com/dogs/index.php'
+    2. JSON (JavaScript Object Notation)
+    3. FILTER
+    4. Async / Await
+
+-->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment9</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dogs</h1>
+    <div id="dogContainer"></div>
+    <script src="showDogs.js"></script>
+    <script>
+    
+    let obj;
+    let filtered;
+    let dogs;
+
+    fetch('https://radufromfinland.com/dogs/index.php')
+    .then(response => response.json()) /* Arrow function */
+    .then(data => obj = data)
+    .then (() => filtered = obj.filter(d => d.age == 4))
+    .then (filteredDogs => dogs = filtered)
+    .then (() => showDogs(dogs, dogContainer)
+    );
+
+    /*
+
+    fetch('https://radufromfinland.com/dogs/index.php')
+    .then(res => res.json)
+    .then(data => {
+        const dogsWithAge4 = data.filter(d => d.age == 4);
+        showDogs(dogsWithAge4, dogContainer)
+    })
+    .catch(err => innerHTML= "Sorry, something bad happens.. try later.");
+
+    */
+
+    /* TÄMÄ PAREMPI MALLI, ei jää odottamaan vaan suorittaa järjestyksessä rivi riviltä
+
+    async function handleDogs(){
+        const res = await fetch('https://radufromfinland.com/dogs/index.php')
+        const data = await.res.json();
+        const dogsWithAge4 = data.filtered(d => d.age == 4);
+        dogContainer.innerHTML="";
+        showDogs(data,dogContainer);
+    }    
+
+
+    */
+
+    /* Sama try-catchilla, ei ehkä paras versio?
+
+    async function handleDogs(){
+        try{
+        const res = await fetch('https://radufromfinland.com/dogs/index.php')
+        }catch (err){
+            innerHTML= "Sorry, something bad happens.. try later."
+        }
+        const data = await.res.json();
+        const dogsWithAge4 = data.filtered(d => d.age == 4);
+        dogContainer.innerHTML="";
+        showDogs(data,dogContainer);
+    }    
+
+
+    */
+    </script>
+</body>
+</html>

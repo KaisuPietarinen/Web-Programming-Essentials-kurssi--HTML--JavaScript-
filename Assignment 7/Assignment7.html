@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 7</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Leap Year</h1>
+        <br>
+        <p id="leapYear"></p>
+        <script>
+            const date=new Date();
+            const year=date.getFullYear();
+            console.log(year);
+            let text = "";
+            
+            for(let i=year; i<=2122; i++){
+                text = isLeapYear(i);
+            }
+            
+            function isLeapYear(givenYear){
+
+                const leapYear4 = givenYear % 4;
+                const leapYear100 = givenYear % 100;
+                const leapYear400 = givenYear % 400;
+    
+                if(leapYear4 == 0 && (leapYear100 != 0 || leapYear400 == 0)){
+                    return document.getElementById("leapYear").innerHTML = text + givenYear + " is a Leap Year" + "<br/>";
+                }else{
+                    return document.getElementById("leapYear").innerHTML = text + givenYear + " is Not a Leap Year" + "<br/>";
+                }
+            }
+            </script>
+    </body>
+</html>

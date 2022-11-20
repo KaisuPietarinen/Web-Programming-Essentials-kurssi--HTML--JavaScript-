@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 8</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+
+        function chiper(){
+            const pInput=document.getElementById("word").value;
+            let shift = Number(numb.value);
+            let solved = "";
+            shift = shift % 26;
+
+            for(let i = 0; i < pInput.length ; i++) {
+                let ascii = pInput[i].charCodeAt();
+                if((ascii >= 65 && ascii <= 90)) {
+                    solved += String.fromCharCode((ascii - 'A'.charCodeAt(0) + shift) % 26 + 'A'.charCodeAt(0)) ;
+                }else if(ascii >= 97 && ascii <= 122){
+                    solved += String.fromCharCode((ascii-'a'.charCodeAt(0) + shift) % 26 + 'a'.charCodeAt(0));
+                }else{
+                solved += pInput[i]
+                }
+            }
+            out.value= solved;
+        }
+        
+        </script>
+    </head>
+    
+    <body>
+        <h1>Caesar Cipher</h1>
+        <br>
+        <div id="dropdown">
+        SHIFT = <select id = "numb" onchange="chiper()">
+            <option>  </option>
+            <option> -2 </option>
+            <option> -1 </option>
+            <option> 0 </option> 
+            <option> 1 </option>  
+            <option> 2 </option> 
+            </select>
+        </div>
+        <table>
+            <tr>
+                <td id="input"> INPUT</td>   
+                <td> = <input id="word" type="text" oninput="chiper()" onchange="chiper()"/></td>
+            </tr>
+            <tr>
+                <td id="input"> OUTPUT</td>
+                <td> = <input id="out" type="textbox"/></td>
+            </tr>
+        </table>
+    </body>
+</html>

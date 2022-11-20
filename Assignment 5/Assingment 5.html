@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 5</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        
+        function financial(x) {
+            return Number.parseFloat(x).toFixed(1);
+        }
+
+        function kmToMiles(){
+            const km=Number(kilom.value);
+            const miles=0.6214;
+            const res=km*miles;
+            result.innerHTML=(financial(res)) + " miles";
+        }
+        </script>
+    </head>
+    
+    <body>
+        <h1>Length Conversion</h1>
+        <div id="input"> 
+            km = <input id="kilom" type="number" value="0"/>
+        </div>
+        <br>
+        <div id="btn">
+            <button onClick="kmToMiles()">
+                <span>&#129131;</span>
+            </button>
+        </div>
+        <br>
+        <br>
+        <div id="result"></div>
+    </body>
+</html>

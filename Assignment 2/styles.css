@@ -1,0 +1,38 @@
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    
+}
+header {
+    color: white;
+    text-align: center;
+    background-color: blue;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+#link {
+    float: left;
+}
+
+#image {
+    float: right;
+}
+
+#link a {
+    color: lightgreen;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    clear: both;
+}
+
+footer a{
+    color: yellowgreen;
+}

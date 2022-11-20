@@ -1,0 +1,339 @@
+/* Private style definitions */
+body{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+#otsikko {
+    font-family: Arial;
+    font-style: bold;
+    font-size: 37px;
+    padding-top: 10px;
+    line-height: 1;
+    color: white;
+    align-items: stretch;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 5px;
+}
+
+#lainaus {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    align-items: stretch;
+    margin: 10px;
+    padding: 5px;
+}
+
+#lahde {
+    font-family: Arial;
+    font-size: 16px;
+    color: gray;
+    line-height: 0;
+    padding-top: 0;
+    align-items: stretch;
+    padding-left: 15px;
+}
+
+#kuva{
+    float: right;
+	width: 300px;
+    padding: 10px;
+}
+
+#ylapalkki{
+    float: left;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    height: 35px;
+	padding-top: 10px;
+}
+
+#menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista {
+    display: inline-block;
+}
+
+.linkki {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    background-color: gray;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.dropdown{
+    display: inline-block;
+    
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+}
+  
+.dropdown-content a:hover {
+    background-color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.vasen{
+    float: left;
+    width: 20%;
+    background-color: white;
+    list-style-type: none;  
+}
+
+#sisallysluet{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: Arial;
+    font-size: 16px; 
+}
+
+.lista2{
+    list-style-type: none;
+}
+
+.linkki2 {
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+    background-color: white;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+article{
+    float: right;
+    width: 80%;
+    background-color: white;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h5 {
+    line-height: 0;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #kuva{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    #kuva{
+        width: 315px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    #kuva{
+        width: 325px;
+    }
+}
+
+@media screen and (max-width: 809px) {
+
+    #kuva{
+        width: 350px;
+    }  
+}
+
+@media screen and (max-width: 735px) {
+
+    #kuva{
+        width: 400px;
+    }
+
+    .vasen{
+        float: left;
+        width: 20%;
+        background-color: white;
+        
+        padding-right: 2%;
+        list-style-type: none;
+    }
+
+    article{
+        float: right;
+        width: 76%;
+        background-color: white;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 734px) {
+
+    #kuva{
+        width: 425px;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+
+    #kuva{
+        width: 425px;
+    } 
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+    header{
+        height: 500px;
+    }
+
+    #kuva{
+        width: 425px;
+        position:absolute;
+        top:25%;
+        right:0%;
+        object-position: center;
+        display:block;
+    }
+
+    #otsikko #lainaus #lahde {
+        position: absolute;
+    }
+    
+    .vasen{
+        float: left;
+        width: 22%;
+        background-color: white;
+        
+        padding-right: 2%;
+        list-style-type: none;
+    }
+
+    article{
+        float: right;
+        width: 74%;
+        background-color: white;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2%;  
+    }
+}
+
+@media screen and (max-width: 550px) {
+ 
+    header{
+        height: 500px;
+    }
+
+    #kuva{
+        width: 425px;
+        position:absolute;
+        top:25%;
+        left:15%;
+        object-position: center;
+        /* object-fit: fill;*/
+        display:block;
+    }
+    
+    #otsikko #lainaus #lahde {
+        position: absolute;
+    }
+
+    .vasen{
+        float: left;
+        width: 24%;
+        background-color: white;
+        
+        padding-right: 2%;
+        list-style-type: none;       
+    }
+
+    article{
+        float: right;
+        width: 72%;
+        background-color: white;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+ 
+    header{
+        height: 500px;
+    }
+
+    #kuva{
+        width: 350px;
+        position:absolute;
+        top:25%;
+        left:15%;
+        /*object-position: center;*/
+        display:block;
+    }
+    
+    #otsikko #lainaus #lahde {
+        position: absolute;
+    }
+
+    .vasen{
+        float: left;
+        width: 26%;
+        background-color: white;
+        
+        padding-right: 2%;
+        list-style-type: none;
+    }
+
+    article{
+        float: right;
+        width: 74%;
+        background-color: white;
+        font-family: Arial;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 2%;  
+    }
+}

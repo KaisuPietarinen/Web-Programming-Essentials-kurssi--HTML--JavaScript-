@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 6</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        
+        function financial(x) {
+            return Number.parseFloat(x).toFixed(2);
+        }
+
+        function pythagorean(){
+            const a=Number(numA.value);
+            const b=Number(numB.value);
+            const res=Math.sqrt(Math.pow(a, 2) + Math.pow(b,2));
+            result.innerHTML="c = " + (financial(res));
+        }
+        </script>
+    </head>
+    
+    <body>
+        <h1>Pythagorean Theorem</h1>
+        <div>
+            <img id="img" src="image.jpg" alt="Image">
+        </div>
+        <br>
+        <div id="input1"> 
+            a = <input id="numA" type="number" value="0"/>
+        </div>
+        <div id="input2"> 
+            b = <input id="numB" type="number" value="0"/>
+        </div>
+        <br>
+        <div id="btn">
+            <button onClick="pythagorean()">
+                <span>&#129131;</span>
+            </button>
+        </div>
+        <br>
+        <div id="result"></div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+h1{
+    padding-left: 60px;
+    padding-top: 20px;
+    font-size: 45px;
+    font-family: "Calibri";
+}
+
+#img{
+    width:200px;
+    padding-left: 160px;
+
+}
+
+#input1{
+    padding-left: 160;
+    font-size: 20px;
+    font-family: "Calibri";
+}
+
+#input2{
+    padding-left: 160;
+    font-size: 20px;
+    font-family: "Calibri";
+}
+
+#kilom{
+    width: 150px;
+    font-size:18px;
+    
+}
+
+#btn{
+    padding-left: 240px;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    font-size:17px;
+    text-align: center;
+}
+
+#result{
+    padding-left: 230px;
+    font-size: 20px;
+    font-family: "Calibri";
+}

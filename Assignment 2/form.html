@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Give feedback</h1>
+        <p>
+            <form action="/send" method="POST">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Matti"><br>
+                <label for="lname">Surname:</label><br>
+                <input type="text" id="lname" name="lname" value="Mainio"><br><br>
+                <label for="feedback">Feedback:</label><br>
+                <textarea placeholder="" rows="4" cols="50">                Write your feedback here</textarea><br>
+                <input type="submit" value="Send">
+            </form>
+            <p>when you press the "Send" button, the form data will be sent to the address "/send".</p>
+        </p>
+    </body>
+</html>
